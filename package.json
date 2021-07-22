@@ -1,0 +1,17 @@
+{
+  "name": "notify-me",
+  "version": "1.0.0",
+  "description": "try to ceate real time push notifycation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Richard Lenin D",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "web-push": "^3.4.4"
+  }
+}
