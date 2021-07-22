@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Notify me</title>
+      <link rel="manifest" href="manifest.json">
+   </head>
+   <body>
+      <h1>Notify me now</h1>
+      <button type="button" name="btn" onclick="notify();" class="btn">click me if you can</button>
+      <button type="button" class="install"> install </button>
+<script>
+    const httpr = new XMLHttpRequest()
+    async function notify(){
+        httpr.open('get','/get',true);
+        httpr.onload = ()=>{
+            console.log('notified');
+        }
+        httpr.send();
+    }
+</script>
+      <script type="text/javascript" src="script.js" ></script>
+   </body>
+</html>
